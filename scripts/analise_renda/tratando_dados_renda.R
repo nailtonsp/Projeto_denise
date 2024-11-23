@@ -57,11 +57,6 @@ renda_data$Territorialidades[23] <- "Araçás"
 distribuicao_renda <- merge(renda_data, ba_geo_data, by.x = "Territorialidades", by.y = "name_muni")
 
 
-##  ============================================== testando normalidade da variavel PIB_2016_percapta ===========================
-
-shapiro.test(renda_data$PIB_2016_percapta) ## os dados nao seguem uma distribuição normal
-
-
 
 ## =========================================  caregando base com lomgitude e latitude ===========================================
 
